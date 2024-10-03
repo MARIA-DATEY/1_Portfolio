@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(0, 25, 31);
+  color: white;
+  font-family: "poppins", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  background-color: rgb(1, 47, 59);
+}
+
+nav div ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav div ul li {
+  list-style: none;
+  margin: 0 25px;
+}
+
+nav div ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav div ul li a:hover {
+  color: aquamarine;
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+main {
+  padding-bottom: 50px;
+}
+
+.left {
+  font-size: 1.5rem;
+}
+
+#Home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 70px 0;
+}
+
+#Home > div {
+  width: 30%;
+}
+
+.home-left {
+  font-size: 2.3rem;
+}
+
+.home-left #btn {
+  background: aquamarine;
+  color: rgb(1, 47, 59);
+  margin: auto;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 0.75rem 1.4rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-left #btn a {
+  text-decoration: none;
+  color: rgb(1, 47, 59);
+  margin: auto;
+  cursor: pointer;
+}
+
+.home-right img {
+  width: 120%;
+}
+
+.name {
+  color: aquamarine;
+}
+
+#element {
+  color: aquamarine;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: double;
+  border-width: 1px;
+  width: 80%;
+  color: aquamarine;
+}
+
+.headings {
+  text-align: center;
+  margin: auto;
+  padding: 15px;
+  color: white;
+  text-decoration: underline;
+}
+
+.bio {
+  font-size: 1.1rem;
+  display: block;
+  text-align: justify;
+  text-align-last: center;
+  max-width: 80%;
+  margin: auto;
+  padding-bottom: 15px;
+}
+
+.bio p {
+  padding: 10px;
+}
+
+#Skills {
+  padding-bottom: 20px;
+}
+
+/* Grid layout */
+.skills-grid {
+  width: 75%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  /* Responsive columns */
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Skill item styling */
+.skill {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.skill img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  border: rgba(1, 110, 74);
+}
+
+.skill h3 {
+  font-size: 1.2rem;
+  color: aquamarine;
+  margin-top: 0;
+  text-transform: capitalize;
+}
+
+/* Hover effect */
+.skill:hover {
+  box-shadow: 0px 0px 20px rgba(1, 110, 74, 0.82);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: translateY(-5px);
+}
+
+/* Project Container Styling */
+.project {
+  background: rgb(1, 47, 59);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+/* Project Hover Effect */
+.project:hover {
+  transform: translateY(-10px);
+  /* Moves the project upward slightly */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Title */
+.project h3 {
+  font-size: 24px;
+  color: aquamarine;
+  margin-bottom: 15px;
+}
+
+/* Project Description */
+.project p {
+  font-size: 16px;
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Project Links Styling */
+.project-btn {
+  background: aquamarine;
+  text-decoration: none;
+  margin: auto;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 0.75rem 1.4rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.project-btn a {
+  color: rgb(1, 47, 59);
+  text-decoration: none;
+  margin: auto;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 0.75rem 1.4rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .project {
+    max-width: 90%;
+  }
+}
+
+/* form Container Styling */
+form {
+  max-width: 500px;
+  margin: auto;
+  padding: 2rem;
+  background: rgb(1, 47, 59);
+  border-radius: 10px;
+}
+
+form label {
+  display: block;
+  font-size: 1.02rem;
+  margin-bottom: 0.5rem;
+}
+
+form input,
+form textarea {
+  width: 96%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: aquamarine;
+  color: rgb(1, 47, 59);
+  margin: auto;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 0.75rem 1.4rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+  background-color: rgb(1, 47, 59);
+}
